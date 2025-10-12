@@ -1,0 +1,342 @@
+:root {
+    --primary-color: #1b2838;
+    --secondary-color: #2ecc71;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --main-bg: #f4f7f9;
+    --card-bg: #ffffff;
+    --light-bg: #eef3f6;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08); 
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--main-bg);
+    padding: 30px 20px; 
+    transition: background-color 0.5s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: var(--card-bg);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s, transform 0.2s;
+    font-weight: 600;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 50px 40px;
+    border-bottom: none; 
+    margin-bottom: 20px; 
+    background-color: var(--card-bg); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+    border-radius: var(--radius);
+}
+
+/* Styles des sections principales */
+#cv, #projet, #reconversion, #immersion {
+    margin: 20px; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); 
+    border-radius: 10px;
+}
+
+section:last-of-type {
+    margin-bottom: 20px; 
+}
+
+.section-title {
+    color: var(--accent-color);
+    font-size: 2.4em; 
+    margin-bottom: 30px;
+    border-bottom: 4px solid var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 8px; 
+    font-weight: 800; 
+}
+
+#reconversion p {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+#reconversion em {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Styles spécifiques à l'immersion (déplacés ici) */
+#immersion ul {
+    margin-top: 20px;
+    padding-left: 25px;
+    list-style: disc;
+}
+
+#immersion ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: var(--text-color);
+    display: list-item;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 400;
+}
+
+#immersion ul li strong {
+    color: var(--primary-color);
+}
+
+.cta-button {
+    margin-top: 20px; 
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color) !important; 
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    border: 2px solid var(--secondary-color);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--card-bg) !important;
+    transform: translateY(-2px);
+}
+/* Fin des styles spécifiques à l'immersion */
+
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; 
+    gap: 40px;
+}
+
+.cv-side-bar {
+    background-color: var(--light-bg);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.cv-side-bar h3 {
+     color: var(--primary-color);
+     border-bottom: 2px solid var(--accent-color);
+     padding-bottom: 8px;
+     margin-top: 20px;
+     margin-bottom: 15px;
+     font-weight: 700;
+}
+
+
+.cv-main-content h3 {
+    color: var(--accent-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e0e0e0; 
+    transition: background-color 0.3s;
+}
+
+.experience-item:hover {
+    background-color: #fafafa; 
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-item p.duration {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s; 
+    opacity: 0;
+    padding-top: 0;
+}
+
+.experience-details.show {
+    max-height: 200px;
+    opacity: 1;
+    padding-top: 15px; 
+}
+
+.experience-details p {
+    background-color: #f0f8ff; 
+    padding: 15px; 
+    border-left: 5px solid var(--accent-color); 
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+.toggle-btn {
+    font-size: 0.85em; 
+    color: var(--secondary-color);
+    text-decoration: none; 
+    cursor: pointer;
+    padding: 4px 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--card-bg);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li, .certifs-list li {
+    background: var(--accent-color);
+    color: var(--card-bg);
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 20px; 
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.skills-list li:hover, .certifs-list li:hover {
+    transform: scale(1.05); 
+}
+
+.project-placeholder {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--light-bg);
+    border: 2px dashed var(--accent-color);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.project-placeholder p {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    font-size: 0.8em;
+    border-radius: 0 0 var(--radius) var(--radius);
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .cv-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    section {
+        padding: 30px 20px;
+        margin: 10px; 
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+}
