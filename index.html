@@ -76,7 +76,7 @@
                     <p class="duration" style="font-weight: 600; color: var(--primary-color);">Dynamique de réussite OpenClassrooms :</p>
                     <ul class="certifs-list">
                         <li>HTML5 et CSS3</li>
-                        <li>Bases du langage Python</li>
+                        <li>Environnement et bases du langage Python</li>
                         <li>Programmer avec JavaScript</li>
                         <li>Linux & Ligne de commande</li>
                         <li>Cybersécurité (Découverte)</li>
@@ -141,12 +141,69 @@
             </div>
         </section>
         <section id="projet">
-            <h2 class="section-title">Mes Projets de Développement (Bientôt en Ligne)</h2>
+            <h2 class="section-title">Mes Projets de Développement</h2>
             <p>Cette section est dédiée aux démonstrations concrètes de mes compétences en développement web et mobile.</p>
-
-            <div class="project-placeholder">
-                <p>Mon premier projet complet sera bientôt exposé ici !</p>
+            <div id="project-list" class="project-grid"> 
+                <div class="project-card" data-project="project-terragusta-fiche">
+                    <img src="images/Capture_Ecran_Saveurs-Nomades.jpg" alt="Vignette Terra Gusta">
+                    <h3>Terra Gusta</h3>
+                    <p>Un site de recette de cuisine.</p>
+                    Découvrez les saveurs du monde entier.</p>
+                    
+                    <button class="view-project-btn">Voir le projet</button>
+                </div>
             </div>
+
+            <section id="project-terragusta-fiche" class="project-detail-page hidden">
+                <button id="back-to-projects-btn">← Retour aux Projets</button>
+
+                <header class="project-header">
+                    <h1>TERRA GUSTA</h1>
+                    <p class="project-tagline">Une plateforme de recettes de cuisine du monde.</p>
+                </header>
+
+                <div class="project-info">
+                    <div class="info-block">
+                <h3>Contexte & Problématique</h3>
+                <p>Création d'un site web dynamique pour centraliser des recettes de cuisine variées, axé sur une expérience utilisateur (UX) simple et une recherche performante par origine géographique, categories et difficulté. Le défi était de gérer une grande quantité de données tout en garantissant une navigation fluide.</p>
+            </div>
+
+            <div class="info-block">
+                <h3>Stack Technique</h3>
+                <ul class="skills-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>Design Responsive</li>
+                    <li>JavaScript (Gestion DOM & événements)</li>
+                    <li>Simulation d'une base de données de recettes (JSON)</li>
+                    <li>**Git** (Contrôle de version)</li>
+                </ul>
+            </div>
+            
+            <div class="info-block">
+                <h3>Fonctionnalités Clés</h3>
+                <ul>
+                    <li>**Recherche & Filtres** : Recherche instantanée et filtrage par Titre/pays/Catégories/difficulté.</li>
+                    <li>**Affichage dynamique** : Chargement des fiches recettes via JavaScript sans rechargement de page.</li>
+                    <li>**Modale de Recette** : Aperçu détaillé d'une recette dans une modale pour améliorer l'UX.</li>
+                    <li>**Design Responsive** : Adaptation optimale pour mobiles, tablettes et desktops.</li>
+                </ul>
+            </div>
+
+            <div class="info-block">
+                <h3>Défis & Apprentissages</h3>
+                <p>Le principal défi a été l'optimisation des performances pour le filtrage et la recherche sur un grand jeu de données. Cela a nécessité de maîtriser les structures de données en JavaScript et d'optimiser les algorithmes de recherche. J'ai aussi perfectionné les techniques de design responsive complexes pour les cartes de recettes.</p>
+            </div>
+            
+            <div class="info-block links-section">
+                <h3>Visualisation du Projet</h3>
+                <a href="https://tsaintot34.github.io/Terra-Gusta/" target="_blank" class="project-link">Démo en Ligne (Live)</a>
+                <a href="https://github.com/tsaintot34/Terra-Gusta.git" target="_blank" class="project-link">Code Source (GitHub)</a>
+            </div>
+
+        </div>
+                
+                </div>
+            </section>
             
         </section>
 
